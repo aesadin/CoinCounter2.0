@@ -39,6 +39,7 @@ const numberToChange = (n) => {
   }
 }
 
+
  // Closure
 function coinCount(coin) {
   return function(amount) {
@@ -46,11 +47,11 @@ function coinCount(coin) {
   }
 }
 
- //Variable functions
- const howmanyQuarters = coinCount(.25)
- const howmanyDimes = coinCount(.10)
- const howmanyNickles = coinCount(.05)
- const howmanyPennies = coinCount(.01)
+//Variable functions
+const howmanyQuarters = coinCount(.25)
+const howmanyDimes = coinCount(.10)
+const howmanyNickles = coinCount(.05)
+const howmanyPennies = coinCount(.01)
 
 
 // const coinChanger 
