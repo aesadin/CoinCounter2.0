@@ -14,7 +14,7 @@
 // 4. Return demoninations with strings ("3 quarters", "6 dimes"...)
 
 
-
+//recursion
 const numberToChange = (n) => {
   const quarterCounter; //3
   const dimeCounter; //2
@@ -39,8 +39,18 @@ const numberToChange = (n) => {
   }
 }
 
- 
+ // Closure
+function coinCount(coin) {
+  return function(amount) {
+    return Math.floor(amount/coin)
+  }
+}
 
+ //Variable functions
+ const howmanyQuarters = coinCount(.25)
+ const howmanyDimes = coinCount(.10)
+ const howmanyNickles = coinCount(.05)
+ const howmanyPennies = coinCount(.01)
 
 
 // const coinChanger 
